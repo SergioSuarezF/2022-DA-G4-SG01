@@ -1,0 +1,20 @@
+[title*="hea"]{
+    text-align: center;
+    color:blueviolet;
+
+}
+
+[class|=top]{
+    text-align: center;
+    color:blue;
+    font-family: cursive;
+}
+
+[title~=Receta]{
+    color:red;
+    font-size:30px;
+}
+
+a[tarjet=blank]{
+    background-color: aqua;
+}
