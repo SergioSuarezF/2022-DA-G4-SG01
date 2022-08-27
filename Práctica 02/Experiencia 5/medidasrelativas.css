@@ -1,0 +1,29 @@
+
+.prof{
+    font-size: 2em;
+}
+.sem{
+
+    font-size: 35x;
+}
+
+label{
+    font-size: 7ch;
+}
+select{
+    font-size: 1rem;
+}
+
+option{
+    font-size: 3lh;
+}
+
+summary{
+    font-size: 2vw;
+}
+
+#x{
+    font-size: 10vh;
+}
+
+
