@@ -1,0 +1,20 @@
+a:link{
+    color:orangered;
+}
+a:visited{
+    color:blue;
+}
+a:hover{
+    color:brown;
+}
+a:active{
+    color:white;
+}
+
+p::first-letter{
+    color:white;
+    font-family: cursive;
+}
+
+
+
