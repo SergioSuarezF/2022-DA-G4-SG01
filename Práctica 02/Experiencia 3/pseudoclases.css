@@ -11,10 +11,6 @@ a:active{
     color:white;
 }
 
-p::first-letter{
-    color:white;
-    font-family: cursive;
-}
 
 
 
