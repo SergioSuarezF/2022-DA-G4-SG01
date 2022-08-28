@@ -1,0 +1,141 @@
+/******************************************************
+ARCHIVO : combinadosymultiples.css
+AUTOR : Joel Pinto
+FECHA : 28/08/2022
+DESCRIPCIÓN : Selectores combinados y múltiples
+*******************************************************/
+
+/* Selectores */
+
+body {
+  background-image: url("fondo.png");
+  backface-visibility: hidden;
+  margin: 0;
+  color: white;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 960px;
+
+}
+
+.fondo1 {
+  background-image: url("fondo1.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.fondo2 {
+  background-image: url("fondo2.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.fondo3 {
+  background-image: url("fondo3.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.imagenes {
+  display: flex;
+  flex-direction: row;
+}
+
+.link {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: small;
+  padding-top: 15px;
+}
+
+.pagina2 {
+  display: flex;
+  justify-content: center;
+  font-family: poppins;
+  font-size: x-large;
+  padding-top: 55px;
+  padding-bottom: 25px;
+}
+
+.pagina3 {
+  display: flex;
+  justify-content: left;
+  font-family: poppins;
+  font-size: x-large;
+  padding-top: 55px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+}
+
+.pagina3-p {
+  display: flex;
+  justify-content: left;
+  font-family: poppins;
+  font-size: medium;
+  padding-left: 15px;
+}
+
+/* Selectores combinados */
+
+div+ul {
+  font-style: italic;
+}
+
+p+div {
+  text-decoration-line: overline underline;
+}
+
+h1+p {
+  text-indent: 50px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+img+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+section>img {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.pagina1 h1 {
+
+  display: flex;
+  justify-content: center;
+  font-family: poppins;
+  font-size: xxx-large;
+  padding-top: 45px;
+
+}
+
+.pagina1 p {
+  display: flex;
+  justify-content: center;
+  font-family: poppins;
+  padding-bottom: 50px;
+}
+
+.columna img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%
+}
+
+/* Selectores multiples */
+
