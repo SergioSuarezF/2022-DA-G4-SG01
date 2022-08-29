@@ -1,0 +1,36 @@
+/******************************************************
+ARCHIVO : coloresrgb.css
+AUTOR : Joel Pinto
+FECHA : 28/08/2022
+DESCRIPCIÓN : Configuracion de colores a traves de la regla rgb
+*******************************************************/
+
+/* Colores */
+
+body {    
+    color: rgb(255, 255, 255)
+}
+
+#pie {
+    background: rgb(166, 166, 166);
+}
+
+section>img {
+    border: 1px solid rgb(221, 221, 221);
+}
+
+div[id*='1'] {
+    color: rgb(245, 245, 245);
+}
+
+h1[class$='pagina3'] {
+    color: rgb(109, 63, 45);
+}
+
+p[class*='pagina3-p'] {
+    color: rgb(208, 147, 117);
+}
+
+h1[id*='1'] {
+    color: rgb(23, 86, 105);
+}
