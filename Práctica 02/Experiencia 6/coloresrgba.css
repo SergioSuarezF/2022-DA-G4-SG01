@@ -1,0 +1,36 @@
+/******************************************************
+ARCHIVO : coloresrgba.css
+AUTOR : Joel Pinto
+FECHA : 28/08/2022
+DESCRIPCIÓN : Configuracion de colores con opacidad
+*******************************************************/
+
+/* Colores */
+
+body {    
+    color: rgba(255, 255, 255, 1);
+}
+
+#pie {
+    background: rgba(166, 166, 166, 1);
+}
+
+section>img {
+    border: 1px solid rgba(221, 221, 221, 1);
+}
+
+div[id*='1'] {
+    color: rgba(245, 245, 245, 1);
+}
+
+h1[class$='pagina3'] {
+    color: rgba(109, 63, 45, 1);
+}
+
+p[class*='pagina3-p'] {
+    color: rgba(208, 147, 117, 1);
+}
+
+h1[id*='1'] {
+    color: rgba(23, 86, 105, 1);
+}
