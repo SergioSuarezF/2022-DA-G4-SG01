@@ -1,0 +1,36 @@
+/******************************************************
+ARCHIVO : coloreshls.css
+AUTOR : Joel Pinto
+FECHA : 28/08/2022
+DESCRIPCIÓN : Configuracion de colores a traves de regla HLS
+*******************************************************/
+
+/* Colores */
+
+body {    
+    color: hsl(0, 0%, 100%);
+}
+
+#pie {
+    background: hsl(0, 0%, 65%);
+}
+
+section>img {
+    border: 1px solid hsl(0, 0%, 87%);
+}
+
+div[id*='1'] {
+    color: hsl(0, 0%, 96%);
+}
+
+h1[class$='pagina3'] {
+    color: hsl(17, 42%, 30%);
+}
+
+p[class*='pagina3-p'] {
+    color: hsl(20, 49%, 64%);
+}
+
+h1[id*='1'] {
+    color: hsl(194, 64%, 25%);
+}
