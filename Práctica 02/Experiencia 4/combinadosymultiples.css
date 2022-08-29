@@ -38,8 +38,6 @@ body {
 }
 
 .link {
-  flex-direction: row-reverse;
-  font-size: small;
   padding-top: 15px;
 }
 
@@ -48,18 +46,13 @@ body {
   justify-content: center;
 }
 
-.pagina3 {  
-  display: flex;
-  justify-content: center;
-  font-size: xxx-large;
+.pagina3 {
   padding-top: 45px;
-  padding-left: 15px;
 }
 
 .pagina3-p {
+  padding-top: 45px;
   font-size: medium;
-  padding-left: 15px;
-
 }
 
 /* Selectores combinados */
@@ -89,12 +82,8 @@ section>img {
 }
 
 .pagina1 h1 {
-
   display: flex;
   justify-content: center;
-  font-size: xxx-large;
-  padding-top: 45px;
-
 }
 
 .pagina1 p {
@@ -110,14 +99,12 @@ section>img {
   max-width: 100%
 }
 
-
-
 /* Selectores multiples */
 
-span, .pagina3, .pagina3-p { 
+span, .pagina3, .pagina3-p {
   display: flex;
   justify-content: center;
-  }
+}
 
 .fondo1, .fondo2, .fondo3 {
   background-size: cover;
@@ -138,4 +125,8 @@ span, .pagina3-p {
   text-align: center;
   font-size: larger;
   letter-spacing: 5px;
+}
+
+.pagina3, .pagina3-p {
+  padding-left: 15px;
 }

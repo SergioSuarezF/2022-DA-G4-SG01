@@ -1,0 +1,37 @@
+/******************************************************
+ARCHIVO : regex.css
+AUTOR : Joel Pinto
+FECHA : 28/08/2022
+DESCRIPCIÓN : Selectores Regex
+*******************************************************/
+
+/* Selectores Regex */
+
+div[id*='1'] {
+    color: whitesmoke;
+    text-decoration-line: overline underline;
+  }
+
+a[class^='link'] {
+    flex-direction: row-reverse;
+    font-size: small;
+    text-indent: 50px;
+    letter-spacing: 2px;
+  }
+
+h2[class$='pagina3'] {
+    font-size: xxx-large;
+    display: flex;
+    justify-content: center;
+    color: rgba(109, 63, 45, 0.733);
+}
+
+p[class*='pagina3-p'] {
+    color: rgb(208, 147, 117);
+}
+
+h1[id*='1'] {
+    color: #175669;
+    font-size: xxx-large;
+    padding-top: 45px;
+}
