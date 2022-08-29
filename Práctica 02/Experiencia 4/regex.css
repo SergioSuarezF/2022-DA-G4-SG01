@@ -19,7 +19,7 @@ a[class^='link'] {
     letter-spacing: 2px;
   }
 
-h2[class$='pagina3'] {
+h1[class$='pagina3'] {
     font-size: xxx-large;
     display: flex;
     justify-content: center;

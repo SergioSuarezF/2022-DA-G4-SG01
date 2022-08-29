@@ -48,11 +48,33 @@ body {
 
 .pagina3 {
   padding-top: 45px;
+  color: none !important;
 }
 
 .pagina3-p {
   padding-top: 45px;
   font-size: medium;
+}
+
+#pie {
+  background: rgb(166, 166, 166);
+  background-size: cover;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+}
+
+#pie > div[id*="contactos"] {
+  font-size: large;
+}
+
+#pie > div[id*="web"] {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+#pie > div[id*="cred"] {
+  font-size: small;
 }
 
 /* Selectores combinados */

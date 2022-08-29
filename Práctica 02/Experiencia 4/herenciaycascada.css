@@ -1,0 +1,159 @@
+/******************************************************
+ARCHIVO : herenciaycascada.css
+AUTOR : Joel Pinto
+FECHA : 28/08/2022
+DESCRIPCIÓN : Selectores Regex
+*******************************************************/
+
+/* Herencia y Cascada*/
+
+#pie {
+    background: rgb(166, 166, 166);
+    background-size: cover;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+
+#pie>div[id*="contactos"] {
+    font-size: large;
+}
+
+#pie>div[id*="web"] {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#pie>div[id*="cred"] {
+    font-size: small;
+}
+
+.pagina1 h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.pagina1 p {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.columna img {
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 22px;
+    max-width: 100%
+}
+
+body {
+    background-image: url("fondo.png");
+    backface-visibility: hidden;
+    margin: 0;
+    color: white;
+}
+
+.contenedor {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 960px;
+}
+
+.fondo1 {
+    background-image: url("fondo1.png");
+}
+
+.fondo2 {
+    background-image: url("fondo2.png");
+}
+
+.fondo3 {
+    background-image: url("fondo3.png");
+}
+
+.imagenes {
+    flex-direction: row;
+}
+
+.link {
+    padding-top: 15px;
+}
+
+.pagina2 {
+    font-size: x-large;
+    justify-content: center;
+}
+
+.pagina3 {
+    padding-top: 45px;
+    color: none !important;
+}
+
+.pagina3-p {
+    padding-top: 45px;
+    font-size: medium;
+}
+
+div+ul {
+    font-style: italic;
+}
+
+p+div {
+    text-decoration-line: overline underline;
+}
+
+h1+p {
+    text-indent: 50px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+img+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+section>img {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+span,
+.pagina3,
+.pagina3-p {
+    display: flex;
+    justify-content: center;
+}
+
+.fondo1,
+.fondo2,
+.fondo3 {
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.imagenes,
+.link,
+.pagina2 {
+    display: flex;
+}
+
+.pagina2,
+.pagina3 {
+    padding-top: 55px;
+    padding-bottom: 25px;
+}
+
+span,
+.pagina3-p {
+    text-align: center;
+    font-size: larger;
+    letter-spacing: 5px;
+}
+
+.pagina3,
+.pagina3-p {
+    padding-left: 15px;
+}
