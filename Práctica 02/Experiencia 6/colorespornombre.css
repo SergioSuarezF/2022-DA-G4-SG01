@@ -1,0 +1,36 @@
+/******************************************************
+ARCHIVO : colorespornombres.css
+AUTOR : Joel Pinto
+FECHA : 28/08/2022
+DESCRIPCIÓN : Configuracion de colores a traves del nombre
+*******************************************************/
+
+/* Colores */
+
+body {    
+    color: white;
+}
+
+#pie {
+    background: gray;
+}
+
+section>img {
+    border: 1px solid gray;
+}
+
+div[id*='1'] {
+    color: whitesmoke;
+}
+
+h1[class$='pagina3'] {
+    color:burlywood;
+}
+
+p[class*='pagina3-p'] {
+    color:bisque;
+}
+
+h1[id*='1'] {
+    color:cadetblue;
+}
