@@ -1,0 +1,24 @@
+.item1 { grid-area: sqare1 }
+.item2 { grid-area: sqare2 }
+.item3 { grid-area: sqare3 }
+.item4 { grid-area: sqare4 }
+.item5 { grid-area: sqare5 }
+.item6 { grid-area: sqare6 }
+
+.grid-container {
+    display: grid;
+    grid-template:
+    'sqare1 sqare1 sqare2 sqare2 sqare2'
+    'sqare1 sqare1 sqare3 sqare3 sqare4'
+    'sqare5 sqare5 sqare3 sqare3 sqare6';
+    grid-gap: 15px;
+    background-color: rgba(white,0.2);
+    padding: 40px;
+}
+
+.grid-container> div {
+
+    padding: 95px 0;
+    border-radius: 20px;
+}
+
