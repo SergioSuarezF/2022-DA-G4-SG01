@@ -1,0 +1,42 @@
+/******************************************************
+ARCHIVO : main.css
+AUTOR : Joel Pinto
+FECHA : 05/09/2022
+DESCRIPCIÓN : Flexbox
+*******************************************************/
+
+/* Flexbox */
+
+body {
+    background: #baeff3;
+}
+
+.contenedor {
+    background: white;
+    width: 512px;
+    margin: 300px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 1px solid black;    
+}
+
+.cuadro {
+    background-color: #9fe9a9;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: papyrus;
+    font-size: 60px;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+.cuadro:hover {
+    background: #95f0ee
+}
