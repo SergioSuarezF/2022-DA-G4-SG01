@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox2</title>
+    <style>
+        .Cabecera{
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(93, 16, 165);
+            justify-content: center;
+            color: white;
+            height: 40px;
+
+        }
+
+        .Cabecera p {
+            width: 300px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .titulo {
+            text-align: center;
+            height: 30px;
+            margin: 20px;
+        }
+
+        .Caja {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+
+            
+        }
+        .Caja div{
+            text-align: center;
+            width: 360px;
+            height: 425px;
+            margin: 20px 20px;
+        }
+        .Caja p {
+            margin: 10px 15px;
+        }
+        .ADD{
+            background-color: rgb(26, 163, 163);
+            border: 10px solid rgb(26, 163, 163);
+        }
+        .Precio {
+            display: flex;
+            justify-content: space-around;
+            width: 80px;
+            height: 15px;
+            border-radius:50px 50px 50px 50px ;
+            background-color: rgb(231, 221, 221);
+            border: 3px solid rgb(231, 221, 221);
+        }
+        #c1 {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 320px;
+            height: 80px;
+        }
+        #c2 {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 320px;
+            height: 55px;
+        }
+        #c3 {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 320px;
+            height: 30px;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="Pagina">
+        <div class="Cabecera">
+            <p><img src="" width="20px" height="17px"></p>
+            <p>Menu</p>
+            <p>Contacto</p>
+            <p>About</p>
+        </div>
+        <div class="titulo">
+            <h1>CAMERAS</h1>
+        </div>
+
+        <div class="Caja">
+            <div>
+                <img src="" width="310px" height="165px">
+                <h2>Smartphone</h2>
+                <p>The best camera is the one that you carry 24/7</p>
+                <div id="c1">
+                    <p class="Precio">Price: 450$</p>
+                    <p class="Precio">In Stock</p>  
+                </div>
+                <p class="ADD">ADD TO CARD</p>
+                
+            </div>
+            <div>
+                <img src="" width="310px" height="165px">
+                <h2>Some Old Polaroid Camera That Produces Hipstery Effects</h2>
+                <p>Get Hipstery Effects</p>
+                <div id="c2">
+                    <p class="Precio">Price: 450$</p>
+                    <p class="Precio">In Stock</p>
+                </div>
+                <p class="ADD">ADD TO CARD</p>
+            </div>
+            <div>
+                <img src="" width="310px" height="165px">
+                <h2>GoPro Hero 4 Silver</h2>
+                <p>GoPro is de facto choice for anyone interested un extreme sports.
+                    The camera has video, photo and timelapse modes, and the low-light
+                    capabilities are exceptional.
+                </p>
+                <div id="c3">
+                    <p class="Precio">Price: 450$</p>
+                    <p class="Precio">In Stock</p>
+                </div>
+                
+                <p class="ADD">ADD TO CARD</p>
+            </div>
+            </div>
+        </div> 
+    </div><br>
+    
+</body>
+</html>
