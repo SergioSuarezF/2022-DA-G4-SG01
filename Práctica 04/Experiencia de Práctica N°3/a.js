@@ -29,3 +29,10 @@ function parte2(msg1, msg2) {
     console.log(msg1() + msg2);
 }
 parte2(parte1, " Mundo!");
+
+// Codigo
+function sayHello() {
+    return () => {
+        console.log("Hello!");
+    }
+}
