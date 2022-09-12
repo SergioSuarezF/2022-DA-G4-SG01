@@ -7,7 +7,16 @@ const foo = () => {
 foo();
 
 // Fixed
-const test = function() {
+const test = function () {
     console.log("hello");
 }
 test();
+
+// Codigo
+function sayHello() {
+    return "Hello, ";
+}
+function greeting(helloMessage, name) {
+    console.log(helloMessage() + name);
+}
+greeting(sayHello, "JavaScript!");
