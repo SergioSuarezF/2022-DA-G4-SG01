@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCSM</title>
+    <style>
+        .title {
+            background-color: black;
+            color: white;
+            text-align: center;
+            border: 20px solid black;
+        }
+
+        .caja1{
+            background-color: rgb(239, 239, 247);
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .caja1 div{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 10px;
+            text-align: center;
+            background-color: white;
+            border: 3px solid rgb(223, 221, 221);
+            width: 400px;
+            height: 320px;
+        }
+        .caja1 p{
+            text-align: justify;
+            margin: auto 15px;
+        }
+
+        button{
+            margin: 5px;
+            border: 3px solid rgb(224, 213, 213);
+            color: white;
+            background-color: rgb(212, 199, 199);
+        }
+        @media only screen and (max-width: 600px) {
+            .caja1 {
+            display:flex;
+            flex-direction:column;
+            }
+            .caja1 div{
+            width: 350px;
+            height: 300px;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="contenido">
+        <div class="title">
+            <p>BIENVENIDO A LA PAGINA</p>
+            <h1>UNIVERSIDAD CATOLICA DE SANTA MARIA</h1>
+            <button onclick="location.href='https://www.ucsm.edu.pe/'"><b>UCSM</b></button>
+        </div>
+        <div class="caja1">
+            <div>
+                <h2>Registro Examen</h2>
+                <img src=""  width="128" height="128">
+                <p>Ingresa aquí para obtener más información de como postular a nuestras distintas carreras</p>
+            </div>
+
+            <div>
+                <h2>Registro matrícula</h2>
+                <img src="" width="128" height="128">
+                <p>Ingresa aquí para poder registrar tut matrícula en tu Escuela Profesional.</p>
+            
+            </div>
+            
+            <div>
+                <h2>Libro de Reclamos</h2>
+                <img src="" width="128" height="128">
+                <p>En esta sección presenta tus quejas o comentarios para poder seguir mejorando como universidad.
+
+                </p>    
+            </div>
+        </div>
+        
+    </div>
+    
+    
+</body>
+
+</html>
