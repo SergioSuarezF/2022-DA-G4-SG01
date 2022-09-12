@@ -36,3 +36,12 @@ function sayHello() {
         console.log("Hello!");
     }
 }
+
+// Fixed
+function sayHello() {
+    return function () {
+        console.log("Hello!");
+    }
+}
+
+sayHello()();
