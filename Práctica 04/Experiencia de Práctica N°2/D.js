@@ -14,4 +14,8 @@ parseInt("Hello", 8); // No es un número en absoluto
 parseInt("0x7", 10); // No es de base 10
 parseInt("546", 2); // Los dígitos no son válidos para representaciones binarias./*/
 
-console.log(parseInt("Hello", 8))
+var howMany = 10;
+alert("howMany.toString() is " + howMany.toString()); // displays "10"
+alert("45 .toString() is " + 45 .toString()); //displays "45"
+var x = 7;
+alert(x.toString(2)) // Displays "111"
