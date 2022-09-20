@@ -1,0 +1,19 @@
+.button-base {
+    border: green,20px;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 11px;
+    cursor: all-scroll;
+}
+
+.button-advance {
+    @extend .button-base;
+    background-color: aqua;
+    background-position-x: center;
+}
+
+.button-back {
+    @extend .button-base;
+    background-color: chartreuse;
+    color: chocolate;
+}
