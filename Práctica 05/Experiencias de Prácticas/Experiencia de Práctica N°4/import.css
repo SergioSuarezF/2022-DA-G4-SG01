@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: red;
+}
+
+#container {
+  width: 680px;
+  border: 3px orange double;
+}
+
+#background {
+  background: linear-gradient(white, skyblue);
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: red;
+  border: 3px orange double;
+}/*# sourceMappingURL=import.css.map */

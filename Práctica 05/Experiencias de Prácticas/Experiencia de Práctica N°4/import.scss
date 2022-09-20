@@ -1,0 +1,8 @@
+@import "variables.scss";
+
+h2 {
+  font-family: $MainFont;
+  font-size: $MainFontSize;
+  color: $MainColor;
+  border: $MainBorder;
+}         
