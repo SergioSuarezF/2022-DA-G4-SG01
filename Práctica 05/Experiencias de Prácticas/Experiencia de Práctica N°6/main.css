@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/******************************************************
+ARCHIVO : main.scss
+AUTOR : Joel Pinto
+FECHA : 19/09/2022
+DESCRIPCIÓN : MIXING Y FUNCIONES EN SASS
+*******************************************************/
+/* Variables */
+/* Mixing */
+/* Funciones */
+/* Other */
+section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  padding: 100px;
+}
+section.inicio {
+  flex-direction: row;
+  margin-top: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  color: rgb(17, 17, 17);
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+p {
+  margin: 20px 0 10px;
+  font-size: 16px;
+}
+
+.boton {
+  cursor: pointer;
+  display: inline-block;
+  background: #16d35e;
+  color: rgb(248, 239, 239);
+  text-decoration: none;
+  padding: 10px 30px;
+  margin: 20px 0;
+  border: 0;
+}
+.boton:hover {
+  transform: scale(0.97);
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  font-size: 32px;
+  font-weight: 700;
+  z-index: 20;
+}
+
+.inicio-texto {
+  position: relative;
+  z-index: 10;
+  max-width: 600px;
+}
+
+.inicio-imagen {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 10;
+}
+
+@media (max-width: 1068px) {
+  .inicio-imagen {
+    display: none;
+  }
+  .logo {
+    top: 10px;
+    left: 40px;
+  }
+  section {
+    padding: 100px 40px;
+  }
+}/*# sourceMappingURL=main.css.map */

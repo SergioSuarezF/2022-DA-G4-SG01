@@ -1,0 +1,140 @@
+/******************************************************
+ARCHIVO : main.scss
+AUTOR : Joel Pinto
+FECHA : 19/09/2022
+DESCRIPCIÓN : MIXING Y FUNCIONES EN SASS
+*******************************************************/
+
+/* Variables */
+$negrito: rgb(17, 17, 17);
+$verde: #16d35e;
+$blanco: rgb(248, 239, 239);
+$fuente: Poppins;
+$fuente_tipo: sans-serif;
+
+
+/* Mixing */
+@mixin fuente {
+    font-family: $fuente, $fuente_tipo;
+	color: $negrito;    
+}
+
+@mixin ubicacion($arriba, $izquierda){
+    top: $arriba;
+    left: $izquierda;
+}
+
+@mixin padd ($a, $b, $c, $d){
+    padding: $a $b;
+    margin: $c $d;	
+}
+
+@mixin absoluto {
+    position: absolute;
+}
+
+@mixin relativo {
+    position: relative;
+}
+
+@mixin alinear {
+	bottom: zero();
+	right: zero();
+}
+    
+
+/* Funciones */
+@function suma($numbers...) {
+    $sum: 0;
+    @each $number in $numbers {
+        $sum: $sum + $number;
+    }
+    @return $sum;
+}
+
+@function cuadrado($base, $exponent) {
+    $result: 1;
+    @for $_ from 1 through $exponent {
+        $result: $result * $base;
+    }
+    @return $result;
+}
+
+@function porcentaje($percent, $total){
+    $pecent: $total / 100;
+    @return $percent;
+}
+
+@function zero(){
+    $a: 0;
+    @return $a;
+}
+
+
+/* Other */
+section {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	align-items: center;
+    padding: suma(50px, 40px, 10px);
+	&.inicio {
+		flex-direction: row;
+		margin-top: 0;
+	}
+}
+* {
+	box-sizing: border-box;
+	@include padd(0, 0, 0, 0);
+}
+body {
+	@include fuente;
+}
+h1 {
+	font-size: suma(29px, 1px);
+	font-weight: 500;
+}
+p {
+	margin: 20px 0 10px;
+	font-size: cuadrado(2, 4) * 1px;
+}
+.boton {
+	cursor: pointer;
+	display: inline-block;
+	background: $verde;
+	color: $blanco;
+	text-decoration: none;
+    @include padd(10px, 30px, 20px, 0);
+	border: 0;
+	&:hover {
+		transform: scale(0.97);
+	}
+}
+.logo {
+	@include absoluto;
+    @include ubicacion(30px, 100px);
+	font-size: suma(29px, 1px, 1px, 1px);
+	font-weight: 700;
+	z-index: 20;
+}
+.inicio-texto {
+	@include relativo;
+	z-index: 10;
+	max-width: 600px;
+}
+.inicio-imagen {
+	@include absoluto;
+	@include alinear;
+    height: porcentaje(10, 1000);
+}
+@media(max-width: 1068px) {
+	.inicio-imagen {
+		display: none;
+	}
+	.logo {
+        @include ubicacion(10px, 40px);
+	}
+	section {
+		padding: 100px 40px;
+	}
+}
