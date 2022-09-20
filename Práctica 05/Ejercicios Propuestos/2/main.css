@@ -1,0 +1,45 @@
+/******************************************************
+ARCHIVO : main.css
+AUTOR : Joel Pinto
+FECHA : 19/09/2022
+DESCRIPCIÓN : EJERCICIO PROPUESTO 2
+*******************************************************/
+
+.encabezado {
+    position: relative;
+    overflow: hidden;
+    padding-top: 270px;
+    padding-bottom: 150px;
+    background: linear-gradient(#d80f70, #fa6b06);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.boton {
+    color: white;
+    background-color: #eb147c;
+    border-color: #eb147c;
+    font-size: 15px;
+    padding: 20px 50px;
+    margin: 40px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.encabezado h1 {
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.encabezado h2 {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.container h1 {
+    font-size: 80px;
+    font-weight: bold;
+}
