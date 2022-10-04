@@ -4,37 +4,26 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-function formatName(user) {
-  return user.firstName + ' ' + user.lastName;
+function Bienvenida(props) {
+  return <h1>Bienvenido a la zona de Usuario Registrados !</h1>;
 }
-
-const user1 = {
-  firstName: 'Diego',
-  lastName: 'Mendoza'
-};
-
-const user2 = {
-  firstName: 'Sergio',
-  lastName: 'Suarez'
-};
-
-const user3 = {
-  firstName: 'Joel',
-  lastName: 'Pinto'
-};
-
-const element = (
-  <h1>
-    Hello, {formatName(user1)}!<br></br>
-    Hello, {formatName(user2)}!<br></br>
-    Hello, {formatName(user3)}!<br></br>
-  </h1>
-);
-
+ 
+function UsuarioAnonimo(props) {
+  return <h1>Por favor, inicia sesión !</h1>;
+}
+ 
+function Saludo(props) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return <Bienvenida />;
+  }
+  return <UsuarioAnonimo />;
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  element
+ <Saludo isLoggedIn ={true} />
+
 );
 
 
