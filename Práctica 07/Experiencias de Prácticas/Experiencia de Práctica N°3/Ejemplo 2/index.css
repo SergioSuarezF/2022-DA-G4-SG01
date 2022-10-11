@@ -29,7 +29,26 @@ div {
   color: white;
 }
 
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 1000px;
+}
+
+li {
+  margin: 0 0.8rem;
+  font-size: 1.3rem;
+  position: relative;
+  list-style: none;
+}
+
 a {
+  color: inherit;
   text-decoration: none;
-  color: #0074D9;
+  border-bottom: 3px solid #fff3;
+}
+
+a:hover {
+  border-bottom-color: #fff9;
 }
