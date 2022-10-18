@@ -1,4 +1,5 @@
 # ESCRIBIR UN ARCHIVO DE TEXTO
+
 archivo = open('Escritura.txt', 'w')
 num = int(input('Ingresar numero de lineas: '))
 i = 0
