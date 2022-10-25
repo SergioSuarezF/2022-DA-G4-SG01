@@ -12,30 +12,27 @@
     {% endif %}
 </head>
 
-<body>
+<body style="box-sizing: border-box; padding: 0 0; margin: 0 0; font-family: Poppins, sans-serif; color: rgb(17, 17, 17);">
     <header>
         {% if titulo %}
-        <div class="logo">{{ titulo }}</div>
+        <div style="position: absolute; top: 30px; left: 100px; font-size: 32px; font-weight: 700; z-index: 20;">{{ titulo }}</div>
         {% else %}
-        <div class="logo"> Bienvenido!</div>
+        <div style="position: absolute; top: 30px; left: 100px; font-size: 32px; font-weight: 700; z-index: 20;"> Bienvenido!</div>
         {% endif %}
     </header>
 
-    <section class="inicio">
-        <!-- <img src="https://github.com/SergioSuarezF/2022-DA-G4-SG01/raw/main/Pr%C3%A1ctica%2005/Experiencias%20de%20Pr%C3%A1cticas/Experiencia%20de%20Pr%C3%A1ctica%20N%C2%B06/fondo.jpg" alt="Agencia" class="inicio-imagen"> -->
-        <div class="inicio-texto">
-            <h1>Dale calidad a tu <br> publicidad con nosotros.</h1>
-            <p>
+    <section style="display: flex; flex-direction: column; height: 100vh; align-items: center; padding: 100px;">
+        <!-- <img style="position: absolute; bottom: 0; right: 0; height: 10;"src="https://github.com/SergioSuarezF/2022-DA-G4-SG01/raw/main/Pr%C3%A1ctica%2005/Experiencias%20de%20Pr%C3%A1cticas/Experiencia%20de%20Pr%C3%A1ctica%20N%C2%B06/fondo.jpg" alt="Agencia" class="inicio-imagen"> -->
+        <div style="padding: 100px 40px; flex-direction: row; margin-top: 0; position: relative; z-index: 10; max-width: 600px;">
+            <h1 style="font-size: 30px; font-weight: 500;">Dale calidad a tu <br> publicidad con nosotros.</h1>
+            <p style="margin: 20px 0 10px; font-size: 16px;">
                 Para resumir: Buscamos adaptarnos constantemente a los cambios en el mercado y a las necesidades
                 de cada cliente, brindando por lo tanto, estrategias publicitarias innovadoras y creativas, que
                 además de ser eficientes tienen responsabilidad socioambiental.
             </p>
             {% for element in data %}
-            <a href="#" class="boton">{{ data.element }}</a> 
+            <a href="#" style="cursor: pointer; display: inline-block; background: #16d35e; color: rgb(248, 239, 239); text-decoration: none; padding: 10px 30px; margin: 20px 0; border: 0;">{{ element.element }}</a>
             {% endfor %}
-            <a href="#" class="boton">Acerca de</a>
-            <a href="#" class="boton">Nostros</a>
-            <a href="#" class="boton">Contacto</a>
         </div>
     </section>
 </body>

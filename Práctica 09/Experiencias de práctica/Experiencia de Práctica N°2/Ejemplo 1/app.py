@@ -17,8 +17,8 @@ data = [
 @app.route('/')
 @app.route('/index.html')
 def index():
-    return render_template('index.html', titulo='Agencia de Publicidad')
+    return render_template('index.html', titulo='Agencia de Publicidad', data=data)
 
 @app.route('/index2.html')
 def arequipa():
-    return render_template('index2.html')
+    return render_template('index2.html', data=data)
