@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if titulo %}
+    <title>{{ titulo }} - Inicio</title>
+    {% else %}
+    <title>Agencia de Turismo - Inicio</title>
+    {% endif %}
+</head>
+
+<body>
+    <header>
+        {% if titulo %}
+        <div class="logo">{{ titulo }}</div>
+        {% else %}
+        <div class="logo">Agencia de Turismo</div>
+        {% endif %}
+    </header>
+
+    <section class="inicio">
+        <!-- <img src="https://github.com/SergioSuarezF/2022-DA-G4-SG01/raw/main/Pr%C3%A1ctica%2005/Experiencias%20de%20Pr%C3%A1cticas/Experiencia%20de%20Pr%C3%A1ctica%20N%C2%B06/fondo.jpg" alt="Agencia" class="inicio-imagen"> -->
+        <div class="inicio-texto">
+            <h1>Te invitamos a conocer <br> el mundo!.</h1>
+            <p>
+                Nuestros 40 años de experiencias como agencia de viajes, y nuestra pasión por el turismo, nos convierten 
+                en una empresa sobresaliente que brinda los mejores programas de viajes tanto en el Perú como en el mundo.
+            </p>
+            {% for element in data %}
+            <a href="#" class="boton">{{ data.element }}</a> 
+            {% endfor %}
+            <a href="#" class="boton">Acerca de</a>
+            <a href="#" class="boton">Nostros</a>
+            <a href="#" class="boton">Contacto</a>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if titulo %}
+    <title>{{ titulo }} - Inicio</title>
+    {% else %}
+    <title>Inicio</title>
+    {% endif %}
+</head>
+
+<body>
+    <header>
+        {% if titulo %}
+        <div class="logo">{{ titulo }}</div>
+        {% else %}
+        <div class="logo"> Bienvenido!</div>
+        {% endif %}
+    </header>
+
+    <section class="inicio">
+        <!-- <img src="https://github.com/SergioSuarezF/2022-DA-G4-SG01/raw/main/Pr%C3%A1ctica%2005/Experiencias%20de%20Pr%C3%A1cticas/Experiencia%20de%20Pr%C3%A1ctica%20N%C2%B06/fondo.jpg" alt="Agencia" class="inicio-imagen"> -->
+        <div class="inicio-texto">
+            <h1>Dale calidad a tu <br> publicidad con nosotros.</h1>
+            <p>
+                Para resumir: Buscamos adaptarnos constantemente a los cambios en el mercado y a las necesidades
+                de cada cliente, brindando por lo tanto, estrategias publicitarias innovadoras y creativas, que
+                además de ser eficientes tienen responsabilidad socioambiental.
+            </p>
+            {% for element in data %}
+            <a href="#" class="boton">{{ data.element }}</a> 
+            {% endfor %}
+            <a href="#" class="boton">Acerca de</a>
+            <a href="#" class="boton">Nostros</a>
+            <a href="#" class="boton">Contacto</a>
+        </div>
+    </section>
+</body>
+
+</html>
