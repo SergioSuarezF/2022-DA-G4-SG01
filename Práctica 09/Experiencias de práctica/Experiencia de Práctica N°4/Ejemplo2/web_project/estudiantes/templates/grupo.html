@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UNIVERSIDAD CATOLICA DE SANTA MARIA</title>
+</head>
+<body>
+<h1>Esta es una lista del grupo!</h1>
+<h2>Clase: {{ clase }}</h2>
+{% if estudiantes %}
+<ul>
+    {% for estudiante in estudiantes %}
+    <li>{{ estudiante.nombre }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+</body>
+</html>
