@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block pagina %}
+      <title>Inicio</title>
+</head>
+<body>
+  <section id="inicio" class="inicio">
+    <div class="container">
+      <h2>Maravíllate con la diversidad de nuestra riqueza natural, cultural e histórica.</h2>
+      <ul>
+      {% for data in data %}      
+        <li>{{ data.pagina }}</li>
+      {% endfor %}
+      </ul>
+      <a href="{{ url_for('arequipa') }}" class="btn">Visitar destinos</a>
+    </div>
+  </section>
+  {% endblock %}

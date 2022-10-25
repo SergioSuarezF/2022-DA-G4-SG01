@@ -1,0 +1,98 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+li {
+  display: inline-block;
+  padding: 7px 17px 9px 17px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #444444;
+  margin: 0 3px 10px 3px;
+  background: #ede9e9;
+  border-radius: 50px;
+}
+
+.inicio{
+  background: url("../img/inicio.jpg") center;
+}
+
+.aqp{
+  background: url("../img/aqp.jpg") top center;
+}
+
+.cusco{
+  background: url("../img/cusco.jpg") top center;
+}
+
+.piura{
+  background: url("../img/piura.jpg") top center;
+}
+
+#inicio {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+#inicio:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.24);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#inicio .container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+#inicio h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#inicio h2 {
+  color: #eee;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+#inicio p {
+  margin: 15px auto 0 auto;
+  font-weight: 400;
+  color: #fff;
+}
+
+#inicio .btn {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px 9px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+}
