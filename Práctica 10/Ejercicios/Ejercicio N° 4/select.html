@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Subir archivos</h2>
+
+
+<form action="/upload">
+  <label for="esp">Selecciona especialidad:</label>
+  <select id="esp" name="esp">
+    <option value="1">Estadistica</option>
+    <option value="2">Desarrollo</option>
+    <option value="3">Testing</option>
+  </select><br><br><br>
+  <input type="file" id="myFile" name="filename"><br><br>
+  <input type="submit">
+</form>
+
+{% endblock %}
