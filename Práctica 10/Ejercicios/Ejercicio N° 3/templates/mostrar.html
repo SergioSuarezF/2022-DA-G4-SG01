@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} Pagina de confirmacion {% endblock %}</h1>
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Nombre completo</td>
+    <td>{{data[0]}}</td>
+  </tr>
+  <tr>
+    <td>Direccion</td>
+    <td>{{data[1]}}</td>
+  </tr>
+  <tr>
+    <td>Correo electronico</td>
+    <td>{{data[2]}}</td>
+  </tr>
+  <tr>
+    <td>Contrasena</td>
+    <td>{{data[3]}}</td>
+  </tr>
+  <tr>
+    <td>Fecha de nacimiento</td>
+    <td>{{data[4]}}</td>
+  </tr>
+  <tr>
+    <td>Sexo</td>
+    <td>{{data[5]}}</td>
+  </tr>
+  <tr>
+    <td>Temas de interes</td>
+    <td>{{data[6]}}</td>
+  </tr>
+  <tr>
+    <td>Aficiones</td>
+    <td>{{data[7]}}</td>
+  </tr>
+{% endblock %}
