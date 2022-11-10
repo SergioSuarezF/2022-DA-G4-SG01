@@ -1,0 +1,19 @@
+{
+  "name": "ejexp1",
+  "version": "1.0.0",
+  "description": "Una App que retorna conferencias",
+  "main": "servidor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioSuarezF/2022-DA-G4-SG01.git#main"
+  },
+  "author": "Sergio Paolo Suarez Fernandez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SergioSuarezF/2022-DA-G4-SG01/issues"
+  },
+  "homepage": "https://github.com/SergioSuarezF/2022-DA-G4-SG01/tree/main#readme"
+}
