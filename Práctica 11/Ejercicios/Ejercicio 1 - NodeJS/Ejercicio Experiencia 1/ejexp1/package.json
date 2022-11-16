@@ -1,19 +1,27 @@
 {
-  "name": "ejexp1",
+  "name": "mi-primera-pagina-node",
   "version": "1.0.0",
-  "description": "Una App que retorna conferencias",
-  "main": "servidor.js",
+  "description": "Mi primera página con node js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "des": "nodemon --exec node src/server.js",
+    "pro": "webpack -p --progress"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SergioSuarezF/2022-DA-G4-SG01.git#main"
+  "author": "EWebik",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "css-loader": "^2.1.0",
+    "express": "^4.16.4",
+    "html-webpack-plugin": "^3.2.0",
+    "mysql": "^2.16.0",
+    "nodemailer": "^5.1.1",
+    "nodemon": "^1.18.9",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.4",
+    "webpack-dev-middleware": "^3.5.0"
   },
-  "author": "Sergio Paolo Suarez Fernandez",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/SergioSuarezF/2022-DA-G4-SG01/issues"
-  },
-  "homepage": "https://github.com/SergioSuarezF/2022-DA-G4-SG01/tree/main#readme"
+  "devDependencies": {
+    "webpack-cli": "^3.2.1"
+  }
 }
