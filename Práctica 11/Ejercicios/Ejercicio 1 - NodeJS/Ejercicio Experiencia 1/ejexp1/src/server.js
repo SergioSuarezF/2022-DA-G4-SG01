@@ -21,10 +21,11 @@ const oEmail = new email({
     "secure":false,
     "auth":{
         "type":"login",
-        "user":"tu-correo@ewebik.com.mx",
-        "pass":"tu-password"
+        "user":"sergio.suarez@ucsm.edu.pe",
+        "pass":"serpa08"
     }
 });
+
 
 const oContacto =  new contacto({
     host:"localhost",

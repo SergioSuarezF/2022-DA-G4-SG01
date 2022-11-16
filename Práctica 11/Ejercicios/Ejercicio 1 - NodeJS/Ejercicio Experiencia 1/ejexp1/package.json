@@ -1,13 +1,13 @@
 {
   "name": "mi-primera-pagina-node",
   "version": "1.0.0",
-  "description": "Mi primera página con node js",
+  "description": "Ejercicio 1 - Punto 3",
   "main": "server.js",
   "scripts": {
     "des": "nodemon --exec node src/server.js",
     "pro": "webpack -p --progress"
   },
-  "author": "EWebik",
+  "author": "Sergio Suárez",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
