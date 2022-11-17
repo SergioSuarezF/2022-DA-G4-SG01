@@ -18,7 +18,7 @@ app.post('/registro', function (req, res) {
     var birth = req.body.birth;
 
 
-    res.send('<h1>Datos registrados correctamente!</h1><br>Nombre Completo: ' + name + '<br>Direccion: ' + addy + '<br>Correo: ' + mail + '<br>Sexo: ' + gender + '<br>Fecha de Nacimiento: ' + birth + '<br>Aficiones' + aficiones + '<br>Temas de Interes' + election);
+    res.send('<h1>Datos registrados correctamente!</h1><br>Nombre Completo: ' + name + '<br>Direccion: ' + addy + '<br>Correo: ' + mail + '<br>Sexo: ' + gender + '<br>Fecha de Nacimiento: ' + birth + '<br>Aficiones: ' + aficiones + '<br>Temas de Interes: ' + election);
     // res.send('Gracias por registrarte, ' + name + '!');
 });
 
