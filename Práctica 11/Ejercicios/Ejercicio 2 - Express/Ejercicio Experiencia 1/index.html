@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <style>
+        .message {
+            padding: 10px;
+            margin: 5px;
+            background-color: #f3f3f3
+        }
+
+        nav a {
+            color: #d64161;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+
+        .alert {
+            padding: 20px;
+            margin: 5px;
+            color: #970020;
+            background-color: #ffd5de;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <div>
+        <h1>Formulario de inscripcion de usuarios</h1>
+        <form action="/registro" method="POST">
+            <fieldset>
+                <label for="name">Nombre completo</label><br>
+                <input type="text" name="name"><br>
+                <label for="addy">Direccion</label><br>
+                <textarea type="text" name="addy" rows="3" cols="26"></textarea><br>
+                <label for="mail">Correo electrónico</label><br>
+                <input type="text" name="mail"><br>
+                <label for="password">Contraseña</label><br>
+                <input type="text" name="password"><br>
+                <label for="password">Confirmar Contraseña</label><br>
+                <input type="text" name="password"><br>
+                <label for="birth">Fecha de nacimiento</label><br>
+                <input type="date" name="birth" min="1970-01-01" value="2022-11-01"><br>
+
+                <label for="gender">Sexo</label><br>
+                <input id='male' name='gender' type='radio'>
+                <label for='male'>Hombre</label><br>
+                <input id='female' name='gender' type='radio'>
+                <label for='female'>Mujer</label><br>
+
+                <label for="election">Por favor, elige los temas de interes</label><br>
+
+                <input type="checkbox" name="election1" value="Ficcion">
+                <label for="election1">Ficcion</label><br>
+                <input type="checkbox" name="election2" value="Terror">
+                <label for="election2">Terror</label><br>
+                <input type="checkbox" name="election3" value="Accion">
+                <label for="election3">Accion</label><br>
+                <input type="checkbox" name="election4" value="Comedia">
+                <label for="election4">Comedia</label><br>
+                <input type="checkbox" name="election5" value="Suspense">
+                <label for="election5">Suspense</label><br>
+
+                <label for="aficiones">Selecciona tus aficiones</label><br>
+                <select id="aficiones" name="aficiones">
+                    <option value="Musica">Musica</option>
+                    <option value="Fotografia">Fotografia</option>
+                    <option value="Deportes">Deportes</option>
+                </select><br>
+                <p><input type="submit" value="Registrar Persona" /></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
