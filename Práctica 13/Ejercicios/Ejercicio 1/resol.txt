@@ -1,0 +1,27 @@
+/*Orden Ascendente:*/
+db.usuarios.find().sort({Qty: 1})
+ 
+/*Orden Descendente:*/
+db.usuarios.find().sort({Qty: -1})
+ 
+/*Mostrar la cantidad de documentos que tiene una colección:*/
+db.usuarios.find().count()
+ 
+/*Utilizar los siguientes operadores de comparación para la búsqueda de documentos en una colección:*/
+$eq
+db.usuarios.find( { code: { $eq: “U1” } } )
+ 
+$ne
+db.usuarios.find( { Qty: { $ne: 0 } } )
+ 
+$gt 
+db.usuarios.find( { Qty: { $gt: 20 } } )
+ 
+$gte
+db.usuarios.find( { Qty: { $gte: 100 } } )
+ 
+$lt
+db.usuarios.find( { Qty: { $lt: 200 } } )
+ 
+$lte
+db.usuarios.find( { Qty: { $lte: 100 } } )
